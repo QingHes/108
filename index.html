@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+    <head>
+      <meta charset="utf-8">
+      <!--link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+      <script src="./jquery-3.2.1.js"></script>        
+      <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+      <title>QingHes's test demo</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"-->
+      <script src="./main/main.js"></script>
+      <style>
+      table{
+        margin:auto;
+      }
+      
+      h1{
+        text-align: center;
+      }
+      ol{
+        margin-left:2cm;
+      }
+      h3{
+        margin-left: 2cm;
+      }
+      </style>
+
+    </head>
+    
+    <body> 
+  <h1>统一建模语言理论测试</h1>
+  <div class="table-responsive"> 
+    <table class="table" id="info" >  
+      <tbody> 
+        <tr>
+          <div class="container-fluid">
+            <div class="row" style="text-align:left">
+            
+          <td><label class="sr-only" for="cla"></label>
+            <div class="input-group-addon">考试科目</div> </td> 
+          <td><input id="cla"class="form-control" type="text" placeholder="统一建模语言" disabled></td> </div>
+         
+          <td><label class="sr-only" for="name"></label>
+            <div id="name" class="input-group-addon">时间</div> </td>
+          <td><input class="form-control" type="text" placeholder="100分钟" disabled></td> </div>
+         
+          <td><label class="sr-only" for="no"></label>
+            <div class="input-group-addon">得分</div></td>
+          <td><input id="finalscore" class="form-control" type="text" placeholder="100" disabled></td> </div>
+        </tr> 
+        <tr>
+            <td><div class="input-group-addon">班级</div></td> 
+            <td><input id="cla"class="form-control" type="text" placeholder="001"></td> 
+            <td><div id="name" class="input-group-addon">姓名</div></td>
+            <td><input id="tn" class="form-control" type="text" placeholder="陈茜"></td>
+            <td><div class="input-group-addon">学号</div></td>
+            <td><input id="no" class="form-control" type="text" placeholder="761"></td>           
+        </tr>
+      </tbody> 
+    </table>
+  </div>
+
+  <div class="TTest-partone">
+      <p>
+        <h3 class="ma">一、填空题（每空5分，共20分）</h3>
+          <ol>
+          <li><form class="form-inline">
+            <lable for="1.1">UML的中文全称是：</lable>
+             <input class="form-control" type="text" class="1.1" id="填空1" placeholder="统一建模语言">
+            
+          </form></li>
+          <li><form class="form-inline">
+            <lable for="1.2">对象最突出的特征是：</lable>
+            <input class="form-control" type="text" class="1.2" id="填空2-1" placeholder="封装性">
+            <input class="form-control" type="text" class="1.2" id="填空2-2" placeholder="继承性">
+            <input class="form-control" type="text" class="1.2" id="填空2-3" placeholder="多态性">
+          </form></li>
+        </ol>
+      </p>
+  </div>      
+     
+  <div class="TTest-partwo">
+    <h3 class="ma">二、选择题（每题10分，共20分）</h3> 
+    <p>
+      <ol>
+        <li>
+          UML与软件工程的关系是:</br>
+          <!--
+          <label for="DoorCt">Doors:    
+              <input type="radio" name="DoorCt" value="twoDoor" checked=”true”onclick="getValue()">Two  
+              <input type="radio" name="DoorCt" value="fourDoor" onclick="getValue()">Four  
+          </label-->
+          <laber for="choce1">
+              <input type="radio" name="choce1" id="1_1" >(A)UML就是软件工程</br>
+              <input type="radio" name="choce1" id="1_2" >(B)UML参与到软件工程中软件开发过程的几个阶段</br>
+              <input type="radio" name="choce1" id="1_3" >(C)UML与软件工程无关</br>
+              <input type="radio" name="choce1" id="1_4" checked="true">(D)UML是软件工程的一部分</br>
+          </laber>
+        </li>
+        <li>Java语言支持：</br>
+            <laber for="choce2">
+              <input type="radio" name="choce2" id="2_1" >(A)单继承</br>
+              <input type="radio" name="choce2" id="2_2" >(B)多继承</br>
+              <input type="radio" name="choce2" id="2_3" >(C)单继承和多继承都支持</br>
+              <input type="radio" name="choce2" id="2_4" checked="true">(D)单继承和多继承都不支持  </br>
+          </laber>
+        </li>
+      </ol>
+    </p>
+  </div>
+
+  <div class="TTest-parthree">
+    <h3 class="ma">三、多择题（每题10分，共20分）</h3>
+    <p>
+      <ol>
+        <li>用例的粒度分为以下哪三种</br>
+            <laber for="multichoce1">
+                <input type="checkbox" name="multichoce1" id="3_1" checked="true">(A)概述级</br>
+                <input type="checkbox" name="multichoce1" id="3_2" checked="true">(B)需求级</br>
+                <input type="checkbox" name="multichoce1" id="3_3" >(C)用户目标级</br>
+                <input type="checkbox" name="multichoce1" id="3_4" checked="true">(D)子功能级</br>
+            </laber>
+          <div class="checkbox">
+        </li>
+        <li>类图由以下哪三部分组成:</br>
+          <laber for="multichoce2">
+              <input type="checkbox" name="multichoce2" id="4_1" checked="true">(A)名称(NAME)</br>
+              <input type="checkbox" name="multichoce2" id="4_2" checked="true">(B)属性(Attribute)</br>
+              <input type="checkbox" name="multichoce2" id="4_3" checked="true">(C)操作(Operation)</br>
+              <input type="checkbox" name="multichoce2" id="4_4" >(D)方法(Function)</br>
+          </laber>
+        </li>
+      </ol>
+    </p>   
+  </div>
+
+  <div class="TTest-partfour">
+    <h3 class="ma">四、判断题（每题10分，共20分）</h3>
+    <p>
+      <ol>
+        <li>用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="juidement" id="5_1">√<input type="radio" id="5_2" name="juidement" checked="true">×</li>
+        <li>在状态图中，终止状态在一个状态图中允许有任意多个。<input type="radio" name="juidement2" id="6_1" checked="true">√<input type="radio" id="6_2" name="juidement2">×</li>
+      </ol>
+    </p>
+  </div>
+
+  <div class="TTest-partfive">
+    <h3 class="ma">五、简答题（每题20分，共20分）</h3>
+      <p>
+        <ol>
+          <li><label></label>简述什么是模型以及模型的表现形式？</br></li>
+          <textarea class="tt" id="7" style="width:750px;height:150px"placeholder="模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。"></textarea>
+        </ol>
+      </p>
+  </div>
+
+  <div class="calculate final score">
+    <!--input type="button" id="1-1" value="jisuanfenshu" onclick="getValue1()"-->
+    <ol>
+    <input id="fin" type="button" value="计算分数"></ol>
+
+  </div>
+</div>
+</div>
+</div>
+
+    </body>
+</html>
